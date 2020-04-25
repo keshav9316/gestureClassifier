@@ -32,7 +32,7 @@ function keyPressed(){
 }
 
 function setup(){
-    createP('HUMAN SKELETON ( Try to get full body in the frame)');
+    createP('Gesture Classifier - left / right hand straight 90deg ( Try to get full body in the frame)');
     createCanvas(640, 480);
     video = createCapture(VIDEO);
     video.hide(); 
@@ -49,9 +49,9 @@ function setup(){
     }
      brain = ml5.neuralNetwork(options);
     const modelDetails = {
-       model: 'model1/model.json',
-       metadata: 'model1/model_meta.json',
-       weights: 'model1/model.weights.bin'
+       model: 'model/model.json',
+       metadata: 'model/model_meta.json',
+       weights: 'model/model.weights.bin'
      };
    
  brain.load(modelDetails,brainLoaded);

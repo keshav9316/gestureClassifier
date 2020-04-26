@@ -80,7 +80,7 @@ function setup(){
 
         function gotResult(error, results){
        
-            if(results[0].confidence>0.01){
+            if(results[0].confidence>0.75){
             poselabel = results[0].label.toUpperCase();
              console.log(results[0].label);
             console.log(results[0].confidence);
